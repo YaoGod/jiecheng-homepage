@@ -2,33 +2,35 @@
     <ul class="wrapper">
         <li><a ui-sref="home.page">杰程交规速成</a></li>
         <li><span>|</span></li>
-        <li><a>加盟</a></li>
+        <li><a ui-sref="home.agent.article">加盟</a></li>
         <li><span>|</span></li>
-        <li class="login"><a>学员登陆</a></li>
+        <li class="login"><a>管理登陆</a></li>
     </ul>
 </div>
 <div class="menu">
     <ul class="box">
         <li><img src="../assets/image/logo_long.png"></li>
         <li><a ui-sref="home.page">首页</a></li>
-        <li><a ui-sref="home">代理加盟</a></li>
-        <li><a ui-sref="home">网点展示</a></li>
+        <li><a ui-sref="home.agent.article">代理加盟</a></li>
+        <li><a ui-sref="home.site.list">网点展示</a></li>
+        <li><a ui-sref="home.news.list">新闻动态</a></li>
+        <li><a ui-sref="use">免费试用</a></li>
+        <li><a ui-sref="home.agent.about">关于我们</a></li>
+        <li><a ui-sref="home.agent.chat">联系我们</a></li>
     </ul>
 </div>
-<div class="wrapper" ui-view>
-
-</div>
+<div class="wrapper"  style="min-height:72%" ui-view></div>
 <div class="footer">
     <div class="wrapper">
         <div class="footer-left"><img src="../assets/image/logo.png"></div>
         <ul class="footer-menu">
             <li><a ui-sref="home.page">杰程交规速成</a></li>
             <li><span>|</span></li>
-            <li><a>代理加盟</a></li>
+            <li><a ui-sref="home.agent.article">代理加盟</a></li>
             <li><span>|</span></li>
-            <li><a>网点展示</a></li>
+            <li><a ui-sref="home.site.list">网点展示</a></li>
             <li><span>|</span></li>
-            <li><a>关于我们</a></li>
+            <li><a ui-sref="home.agent.about">关于我们</a></li>
         </ul>
         <br>
         <div class="copyright">Copyright © 2017 杰程交规（****）公司版权所有 浙ICP备（********）号</div>

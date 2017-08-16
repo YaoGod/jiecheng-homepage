@@ -1,0 +1,11 @@
+<div class="news-box">
+    <h2>新闻动态</h2>
+    <ul class="news-list">
+        <li ng-repeat="news in newsList"><a ui-sref="home.news.detail({id:news.id})">{{news.title}}</a><span>{{news.time}}</span></li>
+    </ul>
+    <ul class="page">
+        <li><</li>
+        <li class="page-active">1</li>
+        <li>></li>
+    </ul>
+</div>

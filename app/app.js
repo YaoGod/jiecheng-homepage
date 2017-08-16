@@ -4,7 +4,11 @@ angular.module('myApp', [
     'ngRoute',
     'ui.router',
     'ui.bootstrap',
-    'myApp.home'
+    'myApp.home',
+    'myApp.agent',
+    'myApp.news',
+    'myApp.site',
+    'myApp.useFree'
 ])
     .config(['$locationProvider', '$urlRouterProvider','$stateProvider', function($locationProvider, $urlRouterProvider,$stateProvider) {
 
@@ -16,7 +20,6 @@ angular.module('myApp', [
               templateUrl: 'home/header.html',
               controller: 'CarouselDemoCtrl'
           })
-          /*  nested list with custom controller*/
           .state('home.page', {
               url: '/home',
               templateUrl: 'home/home.html',
@@ -47,4 +50,3 @@ angular.module('myApp', [
 
             });
     });
-;

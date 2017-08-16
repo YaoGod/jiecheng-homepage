@@ -1,0 +1,14 @@
+<div class="news-box" ng-init="getSiteList()">
+    <h2>网点展示</h2>
+    <ul class="site-box">
+        <li ng-repeat="site in sites">
+            <img ng-src="{{site.imgUrl[0]}}" ui-sref="home.site.detail({id:site.id})">
+            <a ui-sref="home.site.detail({id:site.id})">{{site.title}}</a>
+        </li>
+    </ul>
+    <ul class="page">
+        <li><</li>
+        <li class="page-active">1</li>
+        <li>></li>
+    </ul>
+</div>

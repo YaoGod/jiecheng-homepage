@@ -1,0 +1,9 @@
+<div class="news-box" ng-init="getSiteDetail()">
+    <h2>{{site.title}}</h2>
+    <div class="site-detail" ng-bind-html="article"></div>
+    <div class="site-img-List">
+        <ul>
+            <li ng-repeat="img in site.imgUrl"><img ng-src="{{img}}" ></li>
+        </ul>
+    </div>
+</div>
