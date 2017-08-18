@@ -1,0 +1,149 @@
+[
+    {
+        "id" : 1,
+        "problem":"在铁路道口遇到两个红灯交替闪烁时要停车等待",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "交通标志中红色代表危险，两个红灯交替闪烁时表示火车要经过了，赶紧停车等待。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/xhd26.jpg",
+        "voice": "1.mp3",
+        "value": 2
+    },
+    {
+        "id" : 2,
+        "problem":"在道路与铁路道口遇到一个红灯亮时要尽快通过道口",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "出现红灯就必须得停。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/xhd27.jpg",
+        "voice": "2.mp3",
+        "value": 2
+    },
+    {
+        "id" : 3,
+        "problem":"在这种情况的铁路道口要加速通过。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "《道路交通安全法》第四十四条：机动车通过交叉路口，应当按照交通信号灯、交通标志、交通标线或者交通警察的指挥通过；通过没有交通信号灯、交通标志、交通标线或者交通警察指挥的交叉路口时，应当减速慢行，并让行人和优先通行的车辆先行。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/XHD31.jpg",
+        "voice": "3.mp3",
+        "value": 2
+    },
+    {
+        "id" : 4,
+        "problem":"驾驶机动车在这种信号灯亮的路口，可以右转弯。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "没有问题，在红灯为圆圈，而不是方向箭头和红叉时候，右转弯的车辆只要安全的情况下就可以右转。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/xhd15.jpg",
+        "voice": "4.mp3",
+        "value": 2
+    },
+    {
+        "id" : 5,
+        "problem":"驾驶机动车遇到这种信号灯亮时，如果已越过停止线，可以继续通行",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "《道路交通安全法实施条例》第三十八条：黄灯亮时，已越过停止线的车辆可以继续通行；未经过停止线的则禁止继续通行。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/xhd16.jpg",
+        "voice": "5.mp3",
+        "value": 2
+    },
+    {
+        "id" : 6,
+        "problem":"驾驶机动车行驶到这个位置时，如果车前轮已越过停止线可以继续通过",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "停车，不前进也不后退，停着不动就不扣分，等绿灯亮了在通过。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/xhd17.jpg",
+        "voice": "6.mp3",
+        "value": 2
+    },
+    {
+        "id" : 7,
+        "problem":"驾驶机动车在路口遇到这种信号灯禁止通行",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "请看清题目。题目说遇到这种信号灯，而不是遇到这种情况。遇到绿灯肯定是可以通行的。因此本题错误。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/xhd18.jpg",
+        "voice": "7.mp3",
+        "value": 2
+    }
+]
