@@ -17,17 +17,96 @@
     <div class="setting">
         <h4>显示选项</h4>
         <ul>
-<!--            <li><input type="checkbox" ><label>显示答案</label></li>
-            <li><input type="checkbox" ><label>提示答案</label></li>
-            <li><input type="checkbox" ><label>播放语言讲解</label></li>
-            <li><input type="checkbox" ><label>显示答案</label></li>-->
+            <li><input type="checkbox" name="isShowAns" id="isShowAns" ng-model="isShowAns"><label for="isShowAns">显示答案</label></li>
+            <li><input type="checkbox" name="isShowAnsTip" id="isShowAnsTip" ng-model="isShowAnsTip"><label for="isShowAnsTip">提示答案</label></li>
+            <li><input type="checkbox" name="isPlayMp3" id="isPlayMp3" ng-model="isPlayMp3"><label for="isPlayMp3">播放语音讲解</label></li>
+            <li><input type="checkbox" name="isShowAnsExp" id="isShowAnsExp" ng-model="isShowAnsExp"><label for="isShowAnsExp">显示讲解</label></li>
         </ul>
     </div>
 </div>
 <div class="test-center">
-中
+    <div class="float-left">
+        <div class="subject-box">
+            <h2>考试题目-科目一-<span>信号灯</span></h2>
+            <h3><span>{{page+1}}. </span>{{subject.problem}}</h3>
+            <div class="subject-opt-content">
+                <p ng-repeat="option in subject.option"><span>{{option.name}}.</span>{{option.text}}</p>
+            </div>
+        </div>
+        <audio id="audio1" src="">
+            Your browser does not support the audio tag.
+        </audio>
+        <div class="answer-box">
+            <p>正确答案：<span ng-hide="!isShowAns" ng-repeat="answer in subject.answer">{{answer.name}}</span></p>
+            <p>你的答案：<span ng-repeat="choice in myChoose">{{choice}}</span></p>
+        </div>
+        <div class="btn-opt-box">
+            <input type="button"  ng-repeat="option in subject.option" value="{{option.name}}" ng-click="answerSubject(option.name);">
+        </div>
+        <div class="label-box">
+            <p>答题选项</p>
+            <p>示意图</p>
+        </div>
+        <div class="btn-opt-box">
+            <input type="button" value="上一题" ng-click="pagePre();">
+            <input type="button" value="下一题" ng-click="pageNext();">
+            <input type="button" value="交卷" ng-click="submit();">
+        </div>
+        <div class="img-box">
+            <img ng-src="{{subject.image}}">
+        </div>
 
+        <div class="win" ng-hide="isHideWin">
+            <div class="win-header">
+                <h2>讲解</h2>
+                <input type="button" value="X" ng-click="closeWin();">
+            </div>
+            <div class="win-content">
+                <div class="win-subject">
+                    <h3><span>{{page+1}}. </span>{{subject.problem}}</h3>
+                    <div class="subject-opt-content">
+                        <p ng-repeat="option in subject.option"><span>{{option.name}}.</span>{{option.text}}</p>
+                    </div>
+                </div>
+                <div class="win-subject">
+                    <p>{{subject.describe}}</p>
+                    <p class="win-answer">正确答案：<span ng-repeat="answer in subject.answer">{{answer.name}}</span></p>
+                </div>
+                <div class="win-answer">
+                    <img ng-src="{{subject.image}}">
+                </div>
+                <div class="close-button">
+                    <input type="button" value="继续练习" ng-click="closeWin();">
+                </div>
+
+            </div>
+        </div>
+    </div>
 <div class="test-right">
-右
+    <div class="grid-box">
+        <ul class="grid-list">
+            <li ng-repeat="pageNum in subjects" ng-class="gridClass($index);">{{$index+1}}</li>
+        </ul>
+    </div>
+    <div class="test-btn-box">
+        <input type="button" value="语音讲解" ng-click="playPause();">
+        <input type="button" value="错题重做" ng-click="doWrongSubjects();">
+    </div>
+    <div class="results-box">
+        <ul>
+            <li class="result"><h5>抽题数量</h5>：<span>{{subjects.length}}</span></li>
+            <li class="result"><h5>答对题量</h5>：<span class="num-right">{{right}}</span></li>
+            <li class="result"><h5>答错题量</h5>：<span class="num-wrong">{{wrong}}</span></li>
+            <li class="result"><h5>未答题数</h5>：<span>{{subjects.length-right-wrong}}</span></li>
+            <li class="result"><h5>正确率</h5>：<span ng-if="rightArray.length>0">{{(right/(right+wrong)  | number:2)*100}}%</span></li>
+            <li class="result"><h5>成绩</h5>：<span>{{summary}}</span></li>
+        </ul>
+    </div>
+    <div class="bottom-right-box">
+        <img src="../assets/image/flow.png">
+        <div class="bottom-right-btn">
+            <input type="button" value="返回" ui-sref="home.page">
+        </div>
+    </div>
 </div>
 </div>

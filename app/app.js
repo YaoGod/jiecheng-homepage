@@ -12,8 +12,9 @@ angular.module('myApp', [
 ])
     .config(['$locationProvider', '$urlRouterProvider','$stateProvider', function($locationProvider, $urlRouterProvider,$stateProvider) {
 
-      $urlRouterProvider.when("", "/home")
-          .otherwise("/home");
+      $urlRouterProvider
+          .when("", "home")
+          .otherwise("home");
       $stateProvider
           .state('home', {
               url: '',
@@ -26,7 +27,10 @@ angular.module('myApp', [
               controller: 'homeCtrl'
           })
     }])
-    .controller('CarouselDemoCtrl', function ($scope ,$http) {
+    .controller('CarouselDemoCtrl', function ($scope ,$http,$state) {
+        $scope.redirectToHome = function () {
+          $state.go('home.page');
+        };
         $scope.myInterval = 3500;
         $scope.noWrapSlides = false;
         $scope.active = 0;
