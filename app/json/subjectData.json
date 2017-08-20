@@ -123,7 +123,7 @@
         "describe": "停车，不前进也不后退，停着不动就不扣分，等绿灯亮了在通过。",
         "image": "http://www.58jcjg.com:8080/dles/upload/xhd17.jpg",
         "voice": "6.mp3",
-        "value": 3
+        "value": 2
     },
     {
         "id" : 7,
@@ -144,6 +144,492 @@
         "describe": "请看清题目。题目说遇到这种信号灯，而不是遇到这种情况。遇到绿灯肯定是可以通行的。因此本题错误。",
         "image": "http://www.58jcjg.com:8080/dles/upload/xhd18.jpg",
         "voice": "7.mp3",
+        "value": 2
+    },
+    {
+        "id" : 8,
+        "problem":"驾驶机动车在路口遇到这种信号灯亮时，要在停止线前停车瞭望",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "绿灯，可放心行驶，如磨蹭变成黄灯就真需要停车观望。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/xhd19.jpg",
+        "voice": "8.mp3",
+        "value": 2
+    },
+    {
+        "id" : 9,
+        "problem":"驾驶机动车在路口遇到这种信号灯亮时，不能右转弯",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "只有 红 黄 绿三色且是圆形（如图）交通信号灯的路口，任何情况下都能右转，如果是箭头信号灯的话按箭头方向行驶。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/xhd20.jpg",
+        "voice": "9.mp3",
+        "value": 2
+    },
+    {
+        "id" : 10,
+        "problem":"仪表显示当前车速是20公里/小时。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "此表为发动机转速表，表示目前发动机转速为2000转/分钟。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/jx5.jpg",
+        "voice": "10.mp3",
+        "value": 2
+    },
+    {
+        "id" : 11,
+        "problem":"仪表显示当前发动机转速是6000转/分钟。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "此表为时速和里程表，表示目前车速为60公里/小时。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/jx6.jpg",
+        "voice": "11.mp3",
+        "value": 2
+    },
+    {
+        "id" : 12,
+        "problem":"仪表显示当前冷却液的温度是90度。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "此表为水温表，表示当前水温为90℃。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/jx7.jpg",
+        "voice": "12.mp3",
+        "value": 2
+    },
+    {
+        "id" : 13,
+        "problem":"仪表显示油箱内存油量已在警告线以内。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "看到加油站那个机油的机器没，而且指针都到红色区了，说明油量不足了。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/jx11.jpg",
+        "voice": "13.mp3",
+        "value": 2
+    },
+    {
+        "id" : 14,
+        "problem":"机动车仪表板上如图所示亮，提示两侧车门未关闭。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "看标志两侧的门是打开的状态，如果该灯亮了，就是提醒司机车门是打开的状态。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/jx44.jpg",
+        "voice": "14.mp3",
+        "value": 2
+    },
+    {
+        "id" : 15,
+        "problem":"机动车仪表板上如图所示亮，提示左侧车门未关闭。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "很明显是右侧门没关好。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/jx45.jpg",
+        "voice": "15.mp3",
+        "value": 2
+    },
+    {
+        "id" : 16,
+        "problem":"机动车仪表板上如图所示亮，提示右侧车门未关闭。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "很明显是左侧门没关好。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/jx46jpg",
+        "voice": "16.mp3",
+        "value": 2
+    },
+    {
+        "id" : 17,
+        "problem":"机动车仪表板上如图所示亮，提示行李舱开启。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"B"}
+        ],
+        "describe": "前盖是发动机舱.",
+        "image": "http://www.58jcjg.com:8080/dles/upload/jx47.jpg",
+        "voice": "17.mp3",
+        "value": 2
+    },
+    {
+        "id" : 18,
+        "problem":"驾驶人在一个记分周期内累积记分达到12分的，交通警察依法扣留驾驶证。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "公安机关交通管理部门对机动车驾驶人的道路交通安全违法行为除给予行政处罚外，实行道路交通安全违法行为累积记分(以下简称记分)制度，记分周期为12个月。对在一个记分周期内记分达到12分的，由公安机关交通管理部门扣留其机动车驾驶证，该机动车驾驶人应当按照规定参加道路交通安全法律、法规的学习并接受考试。考试合格的，记分予以清除，发还机动车驾驶证；考试不合格的，继续参加学习和考试。",
+        "image": "",
+        "voice": "18.mp3",
+        "value": 2
+    },
+    {
+        "id" : 19,
+        "problem":"道路交通安全违法行为累积记分一个周期满分为12分。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "道路交通安全违法行为累积记分一个周期满分为12分。",
+        "image": "",
+        "voice": "19.mp3",
+        "value": 2
+    },
+    {
+        "id" : 20,
+        "problem":"机动车驾驶人在实习期内有记满12分记录的，注销其实习的准驾车型驾驶资格。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "机动车驾驶人在实习期内有记满12分记录的，注销其实习的准驾车型驾驶资格。",
+        "image": "",
+        "voice": "20.mp3",
+        "value": 2
+    },
+    {
+        "id" : 21,
+        "problem":"造成交通事故后逃逸，尚不构成犯罪的一次记12分",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "发生事故一定别跑，你是跑不掉的。造成交通事故后逃逸，尚不构成犯罪的一次记12分",
+        "image": "",
+        "voice": "21.mp3",
+        "value": 2
+    },
+    {
+        "id" : 22,
+        "problem":"行车中遇到正在进行作业的道路养护车辆、工程作业车时要注意避让。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "他在为人民服务，我们还是要让一让的。",
+        "image": "",
+        "voice": "22.mp3",
+        "value": 2
+    },
+    {
+        "id" : 23,
+        "problem":"雾天行车多使用喇叭可引起对方注意；听到对方车辆鸣喇叭，也应鸣喇叭回应",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "既然雾天看不见，就要靠听的了。人家鸣喇叭，你当然要回一声告诉别人这里有车，以提高注意",
+        "image": "",
+        "voice": "23.mp3",
+        "value": 2
+    },
+    {
+        "id" : 24,
+        "problem":"在行驶过程中，机动车驾驶人要注意与前车保持安全距离。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "行车时保持安全车距谁都懂。",
+        "image": "",
+        "voice": "24.mp3",
+        "value": 2
+    },
+    {
+        "id" : 25,
+        "problem":"如图所示，在这种情况下遇右侧车辆变更车道，应减速保持间距，注意避让。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "碰到右侧车辆打了左转灯，前车轮已经向本车道转过来了，需要减速保持车距，如果不避让硬冲上去，可能发生刮擦，碰车。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/5a.jpg",
+        "voice": "25.mp3",
+        "value": 2
+    },
+    {
+        "id" : 26,
+        "problem":"如图所示，驾驶机动车遇到这种情况时，A车应当注意避让。",
+        "option": [
+            {
+                "name":"A",
+                "text":"对"
+            },
+            {
+                "name":"B",
+                "text":"错"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "道路养护车辆、工程作业车进行作业时，在不影响过往车辆通行的前提下，其行驶路线和方向不受交通标志、标线限制，过往车辆和人员应当注意避让。",
+        "image": "http://www.58jcjg.com:8080/dles/upload/qhq5.jpg",
+        "voice": "26.mp3",
+        "value": 2
+    },
+    {
+        "id" : 27,
+        "problem":"驾驶拼装机动车上路行驶的驾驶人，除按规定接受罚款外，还要受到哪种处理？",
+        "option": [
+            {
+                "name":"A",
+                "text":"吊销驾驶证"
+            },
+            {
+                "name":"B",
+                "text":"追究刑事责任"
+            },
+            {
+                "name":"C",
+                "text":"暂扣驾驶证"
+            },
+            {
+                "name":"D",
+                "text":"追究刑事责任"
+            }
+        ],
+        "answer": [
+            {"name":"A"}
+        ],
+        "describe": "驾驶拼装的机动车或者已达到报废标准的机动车上道路行驶的，公安机关交通管理部门应当予以收缴，强制报废。 对驾驶前款所列机动车上道路行驶的驾驶人，处200元以上2000元以下罚款，并吊销机动车驾驶证。",
+        "image": "",
+        "voice": "27.mp3",
+        "value": 2
+    },
+    {
+        "id" : 28,
+        "problem":"驾驶报废机动车上路行驶的驾驶人，除按规定罚款外，还要受到哪种处理？",
+        "option": [
+            {
+                "name":"A",
+                "text":"强制恢复车况"
+            },
+            {
+                "name":"B",
+                "text":"撤销驾驶许可"
+            },
+            {
+                "name":"C",
+                "text":"吊销驾驶证"
+            },
+            {
+                "name":"D",
+                "text":"收缴驾驶证"
+            }
+        ],
+        "answer": [
+            {"name":"C"}
+        ],
+        "describe": "对于驾驶已达到报废标准的机动车上路行驶的，《道路交通安全法》第一百条规定，公安机关交通管理部门应当予以收缴，强制报废。",
+        "image": "",
+        "voice": "28.mp3",
+        "value": 2
+    },
+    {
+        "id" : 29,
+        "problem":"对驾驶已达到报废标准的机动车上路行驶的驾驶人,会受到下列哪种处罚?",
+        "option": [
+            {
+                "name":"A",
+                "text":"处20以上200元以下罚款"
+            },
+            {
+                "name":"B",
+                "text":"追究刑事责任"
+            },
+            {
+                "name":"C",
+                "text":"处15日以下拘留"
+            },
+            {
+                "name":"D",
+                "text":"吊销机动车驾驶证"
+            }
+        ],
+        "answer": [
+            {"name":"D"}
+        ],
+        "describe": "不管拼装车还是报废车，都是一样的。罚200-2000。吊销驾照",
+        "image": "",
+        "voice": "29.mp3",
         "value": 2
     }
 ]

@@ -53,7 +53,7 @@
             <input type="button" value="交卷" ng-click="submit();">
         </div>
         <div class="img-box">
-            <img ng-src="{{subject.image}}">
+            <img ng-src="{{subject.image === ''?'#':subject.image}}">
         </div>
 
         <div class="win" ng-hide="isHideWin">
@@ -73,7 +73,7 @@
                     <p class="win-answer">正确答案：<span ng-repeat="answer in subject.answer">{{answer.name}}</span></p>
                 </div>
                 <div class="win-answer">
-                    <img ng-src="{{subject.image}}">
+                    <img ng-src="{{subject.image === ''?'#':subject.image}}">
                 </div>
                 <div class="close-button">
                     <input type="button" value="继续练习" ng-click="closeWin();">

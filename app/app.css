@@ -44,6 +44,7 @@ a,input[type='button']{
 .header{
   width: 100%;
   height: 40px;
+  min-width: 1200px;
   color: #b0b0b0;
   background-color: #333;
 }
@@ -96,6 +97,7 @@ a,input[type='button']{
 .footer{
   width: 100%;
   height: 100px;
+  min-width: 1200px;
   padding: 30px 0;
   font-size: 14px;
   background-color: #F5F5F5;
